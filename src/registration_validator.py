@@ -1,6 +1,7 @@
 import hashlib
 import logging
 import re
+import sys
 from typing import Tuple
 
 class RegistrationValidator:
