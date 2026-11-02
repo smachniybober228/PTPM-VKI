@@ -1,7 +1,7 @@
-from user_interface import UserInterface
-from registration_storage import RegistrationStorage
-from registration_validator import RegistrationValidator
-from sender import EmailSenderInterface, EmailSenderStub
+from .user_interface import UserInterface
+from .registration_storage import RegistrationStorage
+from .registration_validator import RegistrationValidator
+from .sender import EmailSenderInterface, EmailSenderStub
 
 
 class Controller:
@@ -43,11 +43,11 @@ class Controller:
         return result
 
 
-def main() -> None:
+def main() -> None: # pragma: no cover
     controller = Controller()
     ok = controller.run()
     print("True" if ok else "False")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     main()

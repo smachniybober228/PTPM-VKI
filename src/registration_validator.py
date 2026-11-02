@@ -164,7 +164,7 @@ class RegistrationValidator:
             return False, "Внутренняя ошибка при проверке данных"
 
 
-def main() -> None:
+def main() -> None: # pragma: no cover
     validator = RegistrationValidator()
 
     login = input()
@@ -177,5 +177,5 @@ def main() -> None:
     print(message)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     main()
